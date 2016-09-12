@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Spielfeld malefiz</title>
+		<link type="text/css" rel="stylesheet" href="./style.css"></link>
+		<script type="text/javascript" src="./js/malefiz.js"></script>
+	</head>
+	<body>
+	<div id='dialog'>
+		<div id='wrapper'>
+			<label for='nickname'>Nickname</label><input type='text' name='nickname' id='nickname' /><input type='submit' id='nickname_submit' value='Einloggen' />
+		</div>
+	</div>
+		<h3>Malefiz</h3>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Spiel</a></li>
+				<li><a href="#">Highscore</a></li>
+			<ul/>
+		</nav>
+		<br>
+		<div id="angemeldetals"></div>
+		<div id="lobby" class="lobby"><h2>Lobby</h2></div>
+		<div class="gamepanel">
+			<div id="spielfeld"></div>
+		</div>
+        <div class="tabelleAussen">
+			<h2>Chat</h2>
+			<div class="zeile">
+				<div class="zelle">
+					<label>Nachricht: </label>
+					<input id="inputID" type="text" />
+				</div>
+			</div>
+			<div class="zeile">
+				<div class="zelle">
+					<div id="outputID"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
